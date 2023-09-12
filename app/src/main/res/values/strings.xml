@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ejemplo</string>
+    <string-array name="opciones">
+        <item>ejemplo de opcion 1</item>
+        <item>ejemplo de opcion 2</item>
+        <item>ejemplo de opcion 3</item>
+    </string-array>
+</resources>
