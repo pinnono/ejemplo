@@ -36,7 +36,8 @@ public class itemAdapter extends RecyclerView.Adapter<itemAdapter.ItemViewHolder
     public void onBindViewHolder(@NonNull ItemViewHolder holder, int position) {
         item Item = ItemList.get(position);
         holder.imageView.setImageResource(Item.getImage());
-        holder.textView.setText(Item.getTittle());
+        holder.tituloTextView.setText(Item.getTitulo1());
+        holder.desTextView.setText(Item.getDes1());
     }
 
     @Override
@@ -46,13 +47,14 @@ public class itemAdapter extends RecyclerView.Adapter<itemAdapter.ItemViewHolder
 
     class ItemViewHolder extends RecyclerView.ViewHolder{
         ImageView imageView;
-        TextView textView;
-
+        TextView tituloTextView;
+        TextView desTextView;
         public ItemViewHolder(@NonNull View itemView) {
             super(itemView);
 
             imageView= itemView.findViewById(R.id.image_list);
-            textView = itemView.findViewById(R.id.tittle);
+            tituloTextView = itemView.findViewById(R.id.titulo1);
+            desTextView = itemView.findViewById(R.id.des1);
         }
     }
 }

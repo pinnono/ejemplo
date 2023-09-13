@@ -2,11 +2,13 @@ package st.ejemplo;
 
 public class item {
     private int image;
-    private String tittle;
+    private String titulo1;
+    private String des1;
 
-    public item(int image, String tittle) {
+    public item(int image, String titulo1, String des1) {
         this.image = image;
-        this.tittle = tittle;
+        this.titulo1 = titulo1;
+        this.des1 = des1;
     }
 
     public int getImage() {
@@ -17,11 +19,19 @@ public class item {
         this.image = image;
     }
 
-    public String getTittle() {
-        return tittle;
+    public String getTitulo1() {
+        return titulo1;
     }
 
-    public void setTittle(String tittle) {
-        this.tittle = tittle;
+    public void setTitulo1(String titulo1) {
+        this.titulo1 = titulo1;
+    }
+
+    public String getDes1() {
+        return des1;
+    }
+
+    public void setDes1(String des1) {
+        this.des1 = des1;
     }
 }
